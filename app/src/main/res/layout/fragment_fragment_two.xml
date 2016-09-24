@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout3"
+    android:background="@drawable/bbc3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saad.js.FragmentTwo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/dot"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/dot"
+            android:layout_centerInParent="true"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/dot"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/dot2"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/js_2"/>
+    <TextView
+        android:id="@+id/central_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="invisible"
+        android:text="."
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:onClick="A"
+        android:id="@+id/signin"
+        android:layout_toLeftOf="@id/central_point"
+        android:layout_centerVertical="true"
+        android:text="SIGN IN"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="#6200EA"/>
+    <Button
+        android:onClick="Signup3"
+        android:id="@+id/signup"
+        android:layout_toEndOf="@id/central_point"
+        android:layout_centerVertical="true"
+        android:text="SIGN UP"
+        android:background="#ffffff"
+        android:textSize="24sp"
+        android:textColor="#6200EA"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/signin" />
+
+    <TextView
+        android:id="@+id/post_job"
+        android:text="Post A Job"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="180dp"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:textColorLink="#6200EA"
+        />
+    <TextView
+        android:id="@+id/view_job"
+        android:text="View Jobs"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:textColorLink="#6200EA"
+        />
+</RelativeLayout>

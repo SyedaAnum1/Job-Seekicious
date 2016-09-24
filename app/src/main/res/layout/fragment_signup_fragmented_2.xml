@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.saad.js.Signup_fragmented_2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000fff">
+        <ImageView
+            android:onClick="back_button_signup_2"
+            android:id="@+id/back_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/back2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up FORM"
+            android:textSize="26sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="100dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:src="@drawable/dp" />
+    <ImageView
+        android:onClick="camera"
+        android:id="@+id/dpedit"
+        android:layout_toRightOf="@id/dp"
+        android:layout_marginTop="140dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/dpedit"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/linearLayout">
+        <EditText
+            android:id="@+id/username_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email Address"
+            android:ems="10"
+            android:id="@+id/email_signup" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:ems="10"
+            android:id="@+id/password_signup" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Retype Password"
+            android:ems="10"
+            android:id="@+id/repassword" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date Of Birth"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/dob_signup" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:hint="Password"
+            android:id="@+id/phone_signup" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Gender: "/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Male"
+                android:id="@+id/radioButton2"
+                android:layout_gravity="center_horizontal" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/radioButton" />
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="I have read and accept the terms and conditions."
+            android:id="@+id/checkBox"
+            android:layout_below="@+id/linearLayout"
+            />
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:textColor="#ffffff"
+            android:background="#000fff"
+            android:textSize="22dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
